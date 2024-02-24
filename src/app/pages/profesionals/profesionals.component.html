@@ -9,8 +9,8 @@
                     <input type="text" class="form-control" [(ngModel)]="profesional.name" name="name">
                 </div>
                 <div class="form-group">
-                    <label for="last_name">Apellido:</label>
-                    <input type="text" class="form-control" [(ngModel)]="profesional.last_name" name="last_name">
+                    <label for="lastName">Apellido:</label>
+                    <input type="text" class="form-control" [(ngModel)]="profesional.lastName" name="lastName">
                 </div>
                 <div class="form-group">
                     <label for="age">Edad:</label>
@@ -51,8 +51,19 @@
             </form>
         </div>
     </div>
-    <div class="cards">drede
-        <div>frfr</div>
-
+    <div *ngFor="let element of profesionals" class="cards">
+        <div class="card">
+            <div class="datas">
+                <div class="data">Nombre: {{ element.name }}</div>
+                <div class="data">Apellido: {{ element.lastName }}</div>
+                <div class="data">Edad: {{ element.age }}</div>
+                <div class="data">Peso: {{ element.weight }}</div>
+                <div class="data">Altura: {{ element.height }}</div>
+                <div class="data">Retirado: {{ element.isRetired }}</div>
+                <div class="data">Nacionalidad: {{ element.nationality }}</div>
+                <div class="data">Oscars: {{ element.oscarNumber }}</div>
+                <div class="data">Profesión: {{ element.profesion }}</div>
+            </div>
+        </div>
     </div>
 </div>
