@@ -1,0 +1,58 @@
+
+<div class="main">
+    <div class="formulario">
+        <h2 class="text-center">FORMULARIO </h2>
+        <div class="boxForm">
+            <form #profesionalForm="ngForm" class="form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" [(ngModel)]="profesional.name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Apellido:</label>
+                    <input type="text" class="form-control" [(ngModel)]="profesional.last_name" name="last_name">
+                </div>
+                <div class="form-group">
+                    <label for="age">Edad:</label>
+                    <input type="number" class="form-control" [(ngModel)]="profesional.age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Peso:</label>
+                    <input type="number" class="form-control" [(ngModel)]="profesional.weight" name="weight">
+                </div>
+                <div class="form-group">
+                    <label for="height">Altura:</label>
+                    <input type="number" class="form-control" [(ngModel)]="profesional.height" name="height">
+                </div>
+                <div class="form-group">
+                    <label for="isRetired">Esta retirado?</label>
+                    <input type="text" class="form-control" [(ngModel)]="profesional.isRetired" name="isRetired">
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nacionalidad:</label>
+                    <input type="text" class="form-control" [(ngModel)]="profesional.nationality" name="nationality">
+                </div>
+                <div class="form-group">
+                    <label for="oscarNumber">Número de oscars:</label>
+                    <input type="number" class="form-control" [(ngModel)]="profesional.oscarNumber" name="oscarNumber">
+                </div>
+                <div class="form-group">
+                    <label for="profesion">Profesion:</label>
+                    <input type="text" class="form-control" [(ngModel)]="profesional.profesion" name="profesion">
+                </div>
+                <hr>
+                <div class="btn-group btn-group-justified" role="group">
+                    <button type="button" class="btn btn-primary" (click)="onShow(profesionalForm)">Mostrar</button>
+                    <button type="button" class="btn btn-success" (click)="onCreate(profesionalForm)">Crear</button>
+                    <button type="button" class="btn btn-warning" (click)="onUpdate(profesionalForm)">Actualizar</button>
+                    <button type="button" class="btn btn-danger" (click)="onDelete(profesionalForm)">Eliminar</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <div class="cards">drede
+        <div>frfr</div>
+
+    </div>
+</div>

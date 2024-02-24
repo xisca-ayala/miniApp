@@ -1,0 +1,36 @@
+.main{
+    background-color: rgb(208, 204, 204);
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formulario{
+    width: 40%;
+    min-height: 30vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards{
+    width: 60%;
+}
+
+button.btn {
+    width: 25%;
+}
+
+.boxForm {
+    width: 80%;
+}
+
+.btn-group {
+    width: 100%;
+}
+
