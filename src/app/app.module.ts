@@ -11,6 +11,7 @@ import { ProfesionalService } from './shared/profesional.service';
 import { HttpClientModule } from '@angular/common/http'
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { CommonModule } from '@angular/common';
 
 
 
@@ -19,13 +20,13 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ProfesionalsComponent,
-    
+    ProfesionalsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),

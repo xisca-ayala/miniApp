@@ -4,6 +4,7 @@ import { Profesional } from 'src/app/model/profesional';
 import { Response } from 'src/app/model/response';
 import { ProfesionalService } from 'src/app/shared/profesional.service';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profesionals',
@@ -17,7 +18,7 @@ export class ProfesionalsComponent implements OnInit {
   public profesional: Profesional; 
 
   constructor(public myProfesionalService: ProfesionalService, 
-            private toast: ToastrService){
+            private toast: ToastrService, private router: Router){
     this.profesional = new Profesional(null, null, null, null, null, null, null, null, null);
   }
 

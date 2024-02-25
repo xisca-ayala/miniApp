@@ -51,19 +51,20 @@
             </form>
         </div>
     </div>
-    <div *ngFor="let element of profesionals" class="cards">
-        <div class="card">
-            <div class="datas">
-                <div class="data">Nombre: {{ element.name }}</div>
-                <div class="data">Apellido: {{ element.lastName }}</div>
-                <div class="data">Edad: {{ element.age }}</div>
-                <div class="data">Peso: {{ element.weight }}</div>
-                <div class="data">Altura: {{ element.height }}</div>
-                <div class="data">Retirado: {{ element.isRetired }}</div>
-                <div class="data">Nacionalidad: {{ element.nationality }}</div>
-                <div class="data">Oscars: {{ element.oscarNumber }}</div>
-                <div class="data">Profesión: {{ element.profesion }}</div>
-            </div>
+    <div class="card-container">
+        <div *ngFor="let element of profesionals" class="card">
+                <div class="datas">
+                    <h4>PROFESIONAL</h4>
+                    <div class="data">Nombre: {{ element.name }}</div>
+                    <div class="data">Apellido: {{ element.lastName }}</div>
+                    <div class="data">Edad: {{ element.age }}</div>
+                    <div class="data">Peso: {{ element.weight }}</div>
+                    <div class="data">Altura: {{ element.height }}</div>
+                    <div class="data">Retirado: {{ element.isRetired }}</div>
+                    <div class="data">Nacionalidad: {{ element.nationality }}</div>
+                    <div class="data">Oscars: {{ element.oscarNumber }}</div>
+                    <div class="data">Profesión: {{ element.profesion }}</div>
+                </div>
         </div>
     </div>
 </div>

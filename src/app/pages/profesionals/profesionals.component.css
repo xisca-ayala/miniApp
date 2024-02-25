@@ -1,6 +1,6 @@
 .main{
     background-color: rgb(208, 204, 204);
-    height: 100vh;
+    min-height: 100vh;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .formulario{
-    width: 40%;
+    width: 45%;
     min-height: 30vh;
     display:flex;
     flex-direction: column;
@@ -18,23 +18,18 @@
     text-align: center;
 }
 
-.cards{
-    width: 60%;
+.card-container{
+    width: 55%;
+    margin-top:100px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 
-button.btn {
-    width: 25%;
-}
-
-.boxForm {
-    width: 80%;
-}
-
-.btn-group {
-    width: 100%;
-}
-
-.card {
-    width: 100%;
+.card{
+    width: 200px;
+    height: 270px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
